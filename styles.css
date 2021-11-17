@@ -7,5 +7,10 @@
     height: 452px;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     border: 0.1px solid lightgray;
+}
+
+.coloured {
+    background-color: black;
 }

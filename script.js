@@ -6,6 +6,7 @@ function createGrid(dimension) {
 
     for (i = 0; i < dimension**2; i++) {
         gridBox = document.createElement("div");
+        gridBox.className = "box"
         gridBox.style.width = `${gridBoxWidth}px`
         gridBox.style.height = `${gridBoxWidth}px`
         container.appendChild(gridBox);
@@ -14,3 +15,12 @@ function createGrid(dimension) {
 
 //initial 16x16 grid
 createGrid(16);
+
+//add event listeners
+boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+    box.addEventListener('mouseenter', e => {
+        box.className = "coloured";
+    })
+})
