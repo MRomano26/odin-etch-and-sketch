@@ -3,5 +3,9 @@
 }
 
 .container {
-    width: 500px;
+    width: 452px;
+    height: 452px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.1px solid lightgray;
 }
